@@ -1,0 +1,407 @@
+:root{
+    --branco-100: #ffffff;
+    --preto-100: #000000;
+    --violeta-2: #9787c0;
+    --violeta-1: #5a4889;
+    --violeta-0: #352a50;
+    --azul-2: #1f49d6;
+    --azul-1: #112976;
+    --azul-0: #050c24;
+    --amarelo-2: #f5df8e;
+    --amarelo-1: #edc42b;
+    --amarelo-0: #a9870f;
+    --vermelho-2: #e02d15;
+    --vermelho-1: #78180b;
+    --vermelho-0: #250703;
+    --laranja-2: #ef766b;
+    --laranja-1: #dd2717;
+    --laranja-0: #81170e;
+    --Excel: #17864c;
+    --Word: #2166C3;
+    --Powerpoint: #C8421C;
+    --HTML: #F26B3A;
+    --CSS: #33A9DC;
+    --Boostrap: #5B4282;
+    --AWS: #FF9900;
+    --WordPress: #00749A;
+    --VSCode: #0184FF;
+
+
+    --preto-rico: #00030d;
+    --indigo: #1B4159;
+    --jasmine: #f2d479;
+    --marrom-arenoso: #f2aa6b;
+    --castanho: #a6483f;
+}
+
+*{
+    font-family: "Ubuntu", sans-serif;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--preto-rico);
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.geral{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*CONFIGURAÇÃO PARA FIXAR CABEÇALHO E RODAPE*/
+header{
+    background-color: var(--amarelo-1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 25;
+}
+
+section{
+    position: relative;
+    top: 150px;
+}
+
+main{
+    min-height: calc(100vh - 40px); /* Leva em consideração a altura do cabeçalho e do rodapé */
+    padding-bottom: 40px; /* Leva em consideração a altura do rodapé */
+    overflow: auto;
+}
+footer{
+    background-color: green;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 40px; /* Define a altura do rodapé */
+    /*position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 40px;*/
+}
+
+
+.cabecalho{
+    background-color: var(--amarelo-1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 25;
+    background-color: var(--amarelo-1)
+}
+
+.cabecalho_esq{
+    width: 10%;
+    height: 200px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minha_foto{
+    width: 90%;
+    padding: 5% 5%;
+}
+
+.cabecalho_central{
+    width: 70%;
+    height: 200px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: "lato", sans-serif;
+    font-size: xxx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    font-family: "karla";
+    font-size: xxx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+/*p{
+    text-align: justify;
+}*/
+
+.cabecalho_dir{
+    width: 20%;
+    height: 200px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegacao{
+    display: flex;
+    flex-direction: column;
+}
+
+.foto_cabecalho{
+    width: 25%;
+}
+
+.botoes_menu{
+    text-align: center;
+    background-color: var(--preto-rico);
+    color: var(--branco-100);
+    padding: 5% 5%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 5px -15%;
+    transition: background-color 0.5s ease;
+    box-shadow: 5px 5px var(--amarelo-0);  
+}
+    
+.botoes_menu:hover{
+    background-color: var(--amarelo-1);
+    color: var(--preto-rico);
+    transition: background-color 0.5s ease;
+}
+  
+main{
+    display: block;
+    background-color: var(--preto-rico);
+}
+
+.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+}
+
+.parallax_apresentacao{
+    background-image: url("imgv2/parallax01_fundo_tec_mao_1920px.png");
+    /*min-height: 350px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1.05);*/
+
+}
+.conteudo{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    padding: 10% 10%;
+    background-color: var(--preto-rico);
+    color: var(--branco-100);
+}
+
+.parallax_skills{
+    background-image: url("imgv2/parallax02_notebook_codigo_1920px.png");
+}
+
+.imagens_skill{
+    padding: 5%;
+    align-items: center;
+    justify-content: center;    
+}
+
+.borda_skill_nivel{
+    border: solid var(--jasmine);
+    border-radius: 10px;
+    padding: 5%;
+    margin: 2%;
+}
+
+.skill_txt{
+    text-align: center;
+}
+
+.grade {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: var(--branco-100);
+    border-radius: 5%;
+}
+
+.coluna_skill_2 {
+    box-sizing: border-box;
+    padding: 10%;
+    margin: 1%;
+    width: calc((100% / 2) - 2%);
+    align-items: center;
+    justify-content: center;    
+}
+
+.coluna_skill_3 {
+    box-sizing: border-box;
+    padding: 1%;
+    margin: 1%;
+    width: calc((100% / 3) - 2%);
+    align-items: center;
+    justify-content: center;    
+}
+
+.coluna_skill_4 {
+    box-sizing: border-box;
+    padding: 1%;
+    margin: 1%;
+    width: calc((100% / 4) - 2%);
+    align-items: center;
+    justify-content: center;    
+}
+.coluna_1{
+    width: 30%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+
+.coluna_2{
+    width: 30%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+
+.coluna_3{
+    width: 30%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+
+.p1{
+    background-image: url("imgv2/codigos_e_linguagem_1920px.png");
+
+}
+
+.p2{
+    background-image: url("imgv2/fundo_tec_mao_1920px.png");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.container_texto{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.módulo_conteudo{
+    padding: 40px 0;
+    background: #ece7d5;
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+section.module.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+    background: linear-gradient(to bottom, var(--amarelo-1) 5%, rgba(0,0,0,0) 70%, #000 100%);
+}
+
+section.modulo_parallax1{
+    background-image: url(imgv2/codigos_e_linguagem_1920px.png);
+}
+
+section.modulo_parallax2{
+    background-image: url(imgv2/fundo_tec_mao_1920px.png);
+
+}
+
+section.modulo_parallax3{
+    background-image: url(imgv2/linguagens_1920px.png);
+
+}
+section.modulo_parallax4{
+    background-image: url(imgv2/notebook_codigo_1920px.png);
+}
+
+section.module.parallax h2{
+    color: #fff;
+    text-align: center;
+    font-size: 70px;
+    z-index: 50;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
